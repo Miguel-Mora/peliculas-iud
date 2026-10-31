@@ -352,7 +352,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:4000/api/medidas",
+              "raw": "http://localhost:4000/api/medias",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -360,7 +360,7 @@
               "port": "4000",
               "path": [
                 "api",
-                "medidas"
+                "medias"
               ]
             }
           },
@@ -381,7 +381,7 @@
               }
             },
             "url": {
-              "raw": "http://localhost:4000/api/medidas",
+              "raw": "http://localhost:4000/api/medias",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -389,7 +389,7 @@
               "port": "4000",
               "path": [
                 "api",
-                "medidas"
+                "medias"
               ]
             }
           },
@@ -410,7 +410,7 @@
               }
             },
             "url": {
-              "raw": "http://localhost:4000/api/medidas/ID",
+              "raw": "http://localhost:4000/api/medias/ID",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -418,7 +418,7 @@
               "port": "4000",
               "path": [
                 "api",
-                "medidas",
+                "medias",
                 "ID"
               ]
             }
@@ -431,7 +431,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://localhost:4000/api/medidas/ID",
+              "raw": "http://localhost:4000/api/medias/ID",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -439,7 +439,7 @@
               "port": "4000",
               "path": [
                 "api",
-                "medidas",
+                "medias",
                 "ID"
               ]
             }
