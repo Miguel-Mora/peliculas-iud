@@ -1,0 +1,452 @@
+{
+  "info": {
+    "_postman_id": "a8ea6215-62f4-4b2b-acc1-ffe33d1210a6",
+    "name": "API REST - Películas IU Digital",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59345288",
+    "_collection_link": "https://go.postman.co/collection/59345288-a8ea6215-62f4-4b2b-acc1-ffe33d1210a6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "01 - Géneros",
+      "item": [
+        {
+          "name": "GET - Listar géneros",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/generos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "generos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear género",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Ciencia ficción\",\r\n  \"estado\": \"Activo\",\r\n  \"descripcion\": \"Películas de ciencia ficción\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/generos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "generos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar género",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Ciencia ficción\",\r\n  \"estado\": \"Activo\",\r\n  \"descripcion\": \"Películas relacionadas con tecnología, ciencia y exploración espacial\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/generos/6ae4fc32fdebc0516dcc4c63",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "generos",
+                "6ae4fc32fdebc0516dcc4c63"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "02 - Directores",
+      "item": [
+        {
+          "name": "GET - Listar directores",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/directores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "directores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear director",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombres\": \"Christopher Nolan\",\r\n  \"estado\": \"Activo\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/directores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "directores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar director",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombres\": \"Christopher Nolan\",\r\n  \"estado\": \"Activo\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/directores/6ae4fdf5fdebc0516dcc4c64",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "directores",
+                "6ae4fdf5fdebc0516dcc4c64"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "03 - Productoras",
+      "item": [
+        {
+          "name": "GET - Listar productoras",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/productoras",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "productoras"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear productora",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Warner Bros.\",\r\n  \"estado\": \"Activo\",\r\n  \"slogan\": \"Historias extraordinarias\",\r\n  \"descripcion\": \"Compañía productora cinematográfica\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/productoras",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "productoras"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar productora",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Warner Bros.\",\r\n  \"estado\": \"Activo\",\r\n  \"slogan\": \"Entretenimiento para todos\",\r\n  \"descripcion\": \"Productora y distribuidora de películas y series\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/productoras/6ae4fe2ffdebc0516dcc4c65",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "productoras",
+                "6ae4fe2ffdebc0516dcc4c65"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "04 - Tipos",
+      "item": [
+        {
+          "name": "GET - Listar tipos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/tipos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "tipos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear tipo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Película\",\r\n  \"descripcion\": \"Producción cinematográfica\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/tipos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "tipos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar tipo",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Película\",\r\n  \"descripcion\": \"Obra audiovisual cinematográfica destinada al entretenimiento\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/tipos/6ae4fe64fdebc0516dcc4c66",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "tipos",
+                "6ae4fe64fdebc0516dcc4c66"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "05 - Media",
+      "item": [
+        {
+          "name": "GET - Listar películas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/medidas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "medidas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear película",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"serial\": \"PEL-010\",\r\n  \"titulo\": \"Interestelar\",\r\n  \"sinopsis\": \"Un grupo de astronautas emprende una misión espacial para encontrar un nuevo hogar para la humanidad.\",\r\n  \"url\": \"https://example.com/peliculas/interestelar-010\",\r\n  \"imagen\": \"https://example.com/imagenes/interestelar.jpg\",\r\n  \"anioEstreno\": 2014,\r\n  \"genero\": \"6ae4fc32fdebc0516dcc4c63\",\r\n  \"director\": \"6ae4fdf5fdebc0516dcc4c64\",\r\n  \"productora\": \"6ae4fe2ffdebc0516dcc4c65\",\r\n  \"tipo\": \"6ae4fe64fdebc0516dcc4c66\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/medidas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "medidas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar película",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Interestelar - Edición especial\",\r\n  \"sinopsis\": \"Una misión espacial explora mundos desconocidos para garantizar la supervivencia de la humanidad.\",\r\n  \"anioEstreno\": 2014\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/medidas/ID",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "medidas",
+                "ID"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE - Eliminar película",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/medidas/ID",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "medidas",
+                "ID"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
